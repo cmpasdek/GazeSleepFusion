@@ -52,7 +52,7 @@ def get_gaze_direction(face_landmarks, frame_width, frame_height):
     
     # Calculate horizontal gaze direction (simple approach)
     # The ratio between eye centers and nose tip gives an indication of gaze direction
-    gaze_ratio = (nose_tip.x - 0.5) * 2  # Normalized to [-1, 1] range
+    gaze_ratio = (nose_tip.x - 0.5) * 2 # Normalized to [-1, 1] range
     
     return gaze_ratio
 
